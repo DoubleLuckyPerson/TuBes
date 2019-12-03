@@ -1,5 +1,6 @@
 package id.ac.polinema.tiketkereta.fragment;
 
+import android.app.DatePickerDialog;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
@@ -12,9 +13,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
 
 import id.ac.polinema.tiketkereta.R;
 import id.ac.polinema.tiketkereta.Util.Pesan;
@@ -38,6 +45,7 @@ public class Pemesanan extends Fragment{
         final EditText tlp = view.findViewById(R.id.telp);
         final EditText jp = view.findViewById(R.id.jmlpenumpang);
         final RadioGroup keretagroup = view.findViewById(R.id.kereta);
+
 
         Button submit = view.findViewById(R.id.buttonsubmit);
         submit.setOnClickListener(new View.OnClickListener() {
