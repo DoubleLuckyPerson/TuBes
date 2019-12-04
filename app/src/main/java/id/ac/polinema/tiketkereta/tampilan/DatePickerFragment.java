@@ -34,7 +34,7 @@ public class DatePickerFragment extends DialogFragment implements DatePickerDial
 //        tv.setText(tv.getText() + "\nMonth: " + month);
 //        tv.setText(tv.getText() + "\nDay of Month: " + day);
         String stringOfDate = day + "/" + month + "/" + year;
-        tv.setText(tv.getText() + "\n\nTanggal Pesan: " + stringOfDate);
+        tv.setText(tv.getText() + stringOfDate);
 
     }
 }
