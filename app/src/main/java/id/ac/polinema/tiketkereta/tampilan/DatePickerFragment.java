@@ -1,7 +1,9 @@
 package id.ac.polinema.tiketkereta.tampilan;
 
+import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.DatePicker;
 import android.widget.TextView;
@@ -33,8 +35,8 @@ public class DatePickerFragment extends DialogFragment implements DatePickerDial
 //        tv.setText(tv.getText() + "\nYear: " + year);
 //        tv.setText(tv.getText() + "\nMonth: " + month);
 //        tv.setText(tv.getText() + "\nDay of Month: " + day);
-        String stringOfDate = day + "/" + month + "/" + year;
-        tv.setText(tv.getText() + stringOfDate);
+        String stringOfDate = day + "/" + (month+1) + "/" + year;
+        tv.setText(stringOfDate);
 
     }
 }

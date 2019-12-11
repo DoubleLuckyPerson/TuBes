@@ -5,4 +5,11 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="ket">Lalalala</string>
     <string name="almt">Jalan Soekarno Hatta No 9 Malang 65141</string>
+
+    <string-array name="kota">
+        <item>Malang</item>
+        <item>Probolinggo</item>
+        <item>Yogyakarta</item>
+
+    </string-array>
 </resources>
