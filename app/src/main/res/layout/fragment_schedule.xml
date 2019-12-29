@@ -14,7 +14,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Jadwal dan Harga Tiket Kereta Api"
+        android:text="Jadwal dan Harga Tiket Kereta Api Malang - PSE"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="24sp"
@@ -80,16 +80,6 @@
                 android:layout_span="3"
                 android:background="#37abc8"
                 android:gravity="center"
-                android:text="Route"
-                android:textColor="#f2f2f2"
-                android:textSize="18dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_span="3"
-                android:background="#37abc8"
-                android:gravity="center"
                 android:text="Price"
                 android:textColor="#f2f2f2"
                 android:textSize="18dp" />
@@ -132,16 +122,7 @@
                 android:layout_height="wrap_content"
                 android:layout_span="3"
                 android:gravity="center"
-                android:text="Malang - Tugu"
-                android:textColor="#0F0F11"
-                android:textSize="18dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_span="3"
-                android:gravity="center"
-                android:text="Rp350.000"
+                android:text="Rp300.000"
                 android:textColor="#0F0F11"
                 android:textSize="18dp" />
         </TableRow>
@@ -175,15 +156,6 @@
                 android:layout_span="3"
                 android:gravity="center"
                 android:text="09.20"
-                android:textColor="#0F0F11"
-                android:textSize="18dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_span="3"
-                android:gravity="center"
-                android:text="Malang - Pasar Senen"
                 android:textColor="#0F0F11"
                 android:textSize="18dp" />
 
