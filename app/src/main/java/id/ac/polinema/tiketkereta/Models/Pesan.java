@@ -1,4 +1,4 @@
-package id.ac.polinema.tiketkereta.Util;
+package id.ac.polinema.tiketkereta.Models;
 
 public class Pesan {
 

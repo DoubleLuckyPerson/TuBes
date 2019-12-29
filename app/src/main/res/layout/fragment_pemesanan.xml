@@ -143,26 +143,28 @@
 
     <TextView
         android:id="@+id/tv"
-        android:layout_width="169dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="121dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="26dp"
         android:textColor="@color/btlogin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.867"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
         app:layout_constraintTop_toBottomOf="@+id/jmlpenumpang" />
 
     <Button
         android:id="@+id/btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="93dp"
+        android:layout_height="36dp"
         android:layout_below="@id/tv"
+        android:layout_marginTop="18dp"
         android:onClick="buttonOnClicked"
         android:text="Set Date"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv" />
+        app:layout_constraintTop_toBottomOf="@+id/jmlpenumpang"
+        tools:ignore="OnClick" />
 
     <TextView
         android:id="@+id/textView13"

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tampilan.FormPesan">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="408dp"
+        android:layout_height="738dp"
+        android:background="#EFEFEF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="160dp">
+
+            <TextView
+                android:layout_width="367dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="Form Pemesanan Tiket Kereta"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:id="@+id/nama_pemesan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:text="Nama Pemesan"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/nama"
+                android:layout_width="335dp"
+                android:layout_height="55dp"
+                android:ems="10"
+                android:hint="Masukkan Nama"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/alamat_pemesan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Alamat Pemesan"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/alamat"
+                android:layout_width="335dp"
+                android:layout_height="55dp"
+                android:ems="10"
+                android:hint="Masukan Alamat"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/no_tlpp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Nomor HP"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/notlp"
+                android:layout_width="335dp"
+                android:layout_height="55dp"
+                android:ems="10"
+                android:hint="Masukan Nomor HP"
+                android:numeric="integer" />
+
+            <TextView
+                android:id="@+id/jumlah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Jumlah Penumpang"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/jp"
+                android:layout_width="335dp"
+                android:layout_height="55dp"
+                android:ems="10"
+                android:hint="Masukkan Jumlah Penumpang"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/tgl_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Tanggal Berangkat : "
+                android:textColor="@android:color/black"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tgl_brgkt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text=""
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/bt_datepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih Tanggal" />
+
+            <TextView
+                android:id="@+id/asal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_datepicker"
+                android:layout_marginTop="16dp"
+                android:text="Asal :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+
+            <Spinner
+                android:id="@+id/spinner_asal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/asal"
+                android:prompt="@string/country_prompt"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/tujuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_asal"
+                android:layout_marginTop="16dp"
+                android:text="Tujuan :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+
+            <Spinner
+                android:id="@+id/spinner_tujuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/asal"
+                android:prompt="@string/country_prompt"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Pilih Kereta Api : "
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupKA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioMajapahit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Majapahit" />
+
+                <RadioButton
+                    android:id="@+id/radioMatarmaja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Matarmaja" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Total :"
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/totBayar"
+                android:layout_width="205dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="4dp"
+                android:hint=""
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonHitung"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="12dp"
+                android:text="Hitung" />
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_marginTop="12dp"
+                android:text="Submit" />
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

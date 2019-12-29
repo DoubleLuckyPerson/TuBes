@@ -6,10 +6,13 @@
     <string name="ket">Lalalala</string>
     <string name="almt">Jalan Soekarno Hatta No 9 Malang 65141</string>
 
+    <string name="country_prompt">Pilih Stasiun</string>
     <string-array name="kota">
         <item>Malang</item>
-        <item>Probolinggo</item>
-        <item>Yogyakarta</item>
+        <item>Solo</item>
+        <item>Semarang</item>
+        <item>Tegal</item>
+        <item>PSE</item>
 
     </string-array>
 </resources>

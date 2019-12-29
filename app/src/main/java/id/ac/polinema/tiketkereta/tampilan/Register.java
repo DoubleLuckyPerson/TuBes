@@ -25,22 +25,21 @@ import id.ac.polinema.tiketkereta.R;
 public class Register extends AppCompatActivity {
 
     private Button btnlogin, btnregister;
-    private EditText Nama, Email, Password;
+    private EditText Email, Password;
     private FirebaseAuth firebaseAuth;
-    private DatabaseReference databaseReference;
+//    private DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        Nama = findViewById(R.id.reg_input_nama);
         Email = findViewById(R.id.reg_input_email);
         Password = findViewById(R.id.reg_input_pass);
         btnregister = findViewById(R.id.btn_reg);
         btnlogin = findViewById(R.id.btn_link_login);
         firebaseAuth = FirebaseAuth.getInstance();
-        databaseReference = FirebaseDatabase.getInstance().getReference();
+//        databaseReference = FirebaseDatabase.getInstance().getReference();
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,14 +52,11 @@ public class Register extends AppCompatActivity {
         btnregister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final String nama = Nama.getText().toString().trim();
                 final String email = Email.getText().toString().trim();
                 final String pass = Password.getText().toString().trim();
 
-                if(nama.isEmpty() || email.isEmpty() || pass.isEmpty()){
-                    if(nama.isEmpty()){
-                        Nama.setError("Masukkan Nama Anda");
-                    } else if(email.isEmpty()){
+                if(email.isEmpty() || pass.isEmpty()){
+                    if(email.isEmpty()){
                         Email.setError("Masukkan Email Anda");
                     } else if(pass.isEmpty()){
                         Password.setError("Masukkan Password Anda");

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icons8_form_96"
+        tools:layout_conversion_absoluteHeight="90dp"
+        tools:layout_editor_absoluteY="37dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_conversion_absoluteWidth="118dp" />
+
+        <TextView
+            android:id="@+id/namap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_conversion_absoluteHeight="20dp"
+            tools:layout_editor_absoluteY="4dp"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_conversion_absoluteWidth="288dp" />
+
+        <TextView
+            android:id="@+id/jmlp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumlah Penumpang : "
+            tools:layout_conversion_absoluteHeight="19dp"
+            tools:layout_editor_absoluteY="29dp"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_conversion_absoluteWidth="288dp" />
+
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asal :"
+            tools:layout_conversion_absoluteHeight="19dp"
+            tools:layout_editor_absoluteY="52dp"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_conversion_absoluteWidth="288dp" />
+
+        <TextView
+            android:id="@+id/t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tujuan :"
+            tools:layout_conversion_absoluteHeight="19dp"
+            tools:layout_editor_absoluteY="75dp"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_conversion_absoluteWidth="288dp" />
+
+        <TextView
+            android:id="@+id/krt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kereta:"
+            tools:layout_conversion_absoluteHeight="19dp"
+            tools:layout_editor_absoluteY="98dp"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_conversion_absoluteWidth="288dp" />
+
+        <TextView
+            android:id="@+id/tgl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Keberangkatan :"
+            tools:layout_conversion_absoluteHeight="19dp"
+            tools:layout_editor_absoluteY="122dp"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_conversion_absoluteWidth="288dp" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Bayar : "
+            tools:layout_conversion_absoluteHeight="19dp"
+            tools:layout_editor_absoluteY="145dp"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_conversion_absoluteWidth="288dp" />
+
+</LinearLayout>

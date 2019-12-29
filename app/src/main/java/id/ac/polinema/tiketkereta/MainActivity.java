@@ -18,6 +18,7 @@ import id.ac.polinema.tiketkereta.fragment.Pemesanan;
 import id.ac.polinema.tiketkereta.fragment.ResultFragment;
 import id.ac.polinema.tiketkereta.fragment.information;
 import id.ac.polinema.tiketkereta.fragment.schedule;
+import id.ac.polinema.tiketkereta.tampilan.Awal;
 import id.ac.polinema.tiketkereta.tampilan.DatePickerFragment;
 import id.ac.polinema.tiketkereta.tampilan.Login;
 
@@ -26,14 +27,16 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
 
     private ResultFragment resultFragment;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        BottomNavigationView bottomNavigationView = findViewById(R.id.navigation);
-        bottomNavigationView.setOnNavigationItemSelectedListener(this);
-        loadFragment(new Pemesanan());
-        resultFragment = new ResultFragment();
+//        BottomNavigationView bottomNavigationView = findViewById(R.id.navigation);
+//        bottomNavigationView.setOnNavigationItemSelectedListener(this);
+//        loadFragment(new Pemesanan());
+//        resultFragment = new ResultFragment();
+        loadFragment(new schedule());
     }
 
     private boolean loadFragment(Fragment fragment) {
@@ -88,10 +91,10 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 //
 //    }
 
-//    @Override
-//    public void onBackPressed() {
+    @Override
+    public void onBackPressed() {
 //        super.onBackPressed();
-//        Intent intent = new Intent(this, MainActivity.class);
-//        startActivity(intent);
-//    }
+        Intent intent = new Intent(this, Awal.class);
+        startActivity(intent);
+    }
 }

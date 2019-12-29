@@ -1,30 +1,21 @@
 package id.ac.polinema.tiketkereta.fragment;
 
-import android.app.DatePickerDialog;
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
-import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Locale;
-
 import id.ac.polinema.tiketkereta.R;
-import id.ac.polinema.tiketkereta.Util.Pesan;
+import id.ac.polinema.tiketkereta.Models.Pesan;
 
 public class Pemesanan extends Fragment{
 
